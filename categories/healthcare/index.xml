@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Healthcare on exp-ai</title>
+    <link>https://exp-ai.github.io/categories/healthcare/</link>
+    <description>Recent content in Healthcare on exp-ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>info@exp-ai.com (exp-ai)</managingEditor>
+    <webMaster>info@exp-ai.com (exp-ai)</webMaster>
+    <copyright>(c) 2018 Exp-ai.</copyright>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://exp-ai.github.io/categories/healthcare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Healthcare</title>
+      <link>https://exp-ai.github.io/apps/healthcare/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
+      <author>info@exp-ai.com (exp-ai)</author>
+      <guid>https://exp-ai.github.io/apps/healthcare/</guid>
+      <description>Healthcare This is my healthcare App!</description>
+    </item>
+    
+  </channel>
+</rss>
