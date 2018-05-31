@@ -1,65 +1,10 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <script type="application/ld+json">
-    {
-        "@context" : "http://schema.org",
-        "@type" : "BlogPosting",
-        "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": "https://exp-ai.github.io"
-        },
-        "articleSection" : "blog",
-        "name" : "Creating a New Theme",
-        "headline" : "Creating a New Theme",
-        "description" : "Learn how to create a theme on Hugo",
-        "inLanguage" : "en",
-        "author" : "info@exp-ai.comexp-ai",
-        "creator" : "info@exp-ai.comexp-ai",
-        "publisher": "info@exp-ai.comexp-ai",
-        "accountablePerson" : "info@exp-ai.comexp-ai",
-        "copyrightHolder" : "info@exp-ai.comexp-ai",
-        "copyrightYear" : "2014",
-        "datePublished": "2014-09-28 00:00:00 &#43;0000 UTC",
-        "dateModified" : "2014-09-28 00:00:00 &#43;0000 UTC",
-        "url" : "https://exp-ai.github.io/blog/creating-a-new-theme/",
-        "wordCount" : "7252",
-        "keywords" : [ "tutorial","Blog" ]
-    }
-    </script>
-        
-            
-                <title>Creating a New Theme</title>
-            
-        
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.34" />
-        
-
-
-        
-            <meta name="author" content="Theme author">
-        
-        
-            <meta name="description" content="Learn how to create a theme on Hugo">
-        
-
-        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Creating a New Theme"/>
-<meta name="twitter:description" content="Learn how to create a theme on Hugo"/>
-
-        <meta property="og:title" content="Creating a New Theme" />
-<meta property="og:description" content="Learn how to create a theme on Hugo" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://exp-ai.github.io/blog/creating-a-new-theme/" />
-
-
-
-<meta property="article:published_time" content="2014-09-28T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2014-09-28T00:00:00&#43;00:00"/>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
@@ -69,555 +14,95 @@
 
 
 
+<title>Creating a new theme</title>
+
+<meta name="generator" content="Hugo 0.38.1" />
 
 
-        <meta property="og:image" content="https://exp-ai.github.io/images/logo.png">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="512">
-        <meta property="og:image:height" content="512">
-        
-<meta itemprop="name" content="Creating a New Theme">
-<meta itemprop="description" content="Learn how to create a theme on Hugo">
+<link rel="stylesheet" href="https://www.example.comcss/owl.carousel.css" />
+<link rel="stylesheet" href="https://www.example.comcss/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.example.comcss/font-awesome.min.css" />
+<link rel="stylesheet" href="https://www.example.comcss/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://www.example.comcss/airspace.css" />
+<link rel="stylesheet" href="https://www.example.comcss/style.css" />
+<link rel="stylesheet" href="https://www.example.comcss/ionicons.min.css" />
+<link rel="stylesheet" href="https://www.example.comcss/animate.css" />
+<link rel="stylesheet" href="https://www.example.comcss/responsive.css" />
+<link rel="stylesheet" href="https://www.example.comcss/syntax.css" />
 
 
-<meta itemprop="datePublished" content="2014-09-28T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2014-09-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="7252">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://www.example.comjs/bootstrap.min.js"></script>
+<script src="https://www.example.comjs/owl.carousel.min.js"></script>
+<script src="https://www.example.comjs/plugins.js"></script>
+<script src="https://www.example.comjs/min/waypoints.min.js"></script>
+<script src="https://www.example.comjs/jquery.counterup.js"></script>
+
+
+<script src="https://www.example.comjs/main.js"></script>
 
 
 
-<meta itemprop="keywords" content="tutorial," />
+</head>
+<body>
 
-        
-
-        
-            
-        
-
-        
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
-            <link rel="stylesheet" href="https://exp-ai.github.io/css/main.css">
-            <link rel="stylesheet" href="https://exp-ai.github.io/css/add-on.css">
-            <link rel="stylesheet" href="https://exp-ai.github.io/css/academicons.min.css">
-        
-
-        
-            
-                
-            
-                
-                    <link rel="stylesheet" href="https://exp-ai.github.io/css/custom.css">
-                
-            
-        
-
-
-  
-    
-    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-  
-
-
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
       
-    </head>
-    <body>
-
-      
-      <div id="wrapper">
-
-    
-    
-<header id="header">
-    
-      <h1><a href="https://exp-ai.github.io/">blog</a></h1>
-    
-
-    <nav class="links">
-        <ul>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.example.com">
+              <img src="https://www.example.comimg/logo.png" alt="Airspace for Hugo Logo">
+            </a>
+          </div>
             
-                <li>
-                    <a href="https://exp-ai.github.io/">
-                            <i class="fa fa-home">&nbsp;</i>Home
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://exp-ai.github.io/apps/">
-                            <i class="fa fa-mobile">&nbsp;</i>Apps
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://exp-ai.github.io/blog/">
-                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://exp-ai.github.io/about/">
-                            <i class="fa fa-id-card-o">&nbsp;</i>About
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://exp-ai.github.io/contact/">
-                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
-                    </a>
-                </li>
-            
-        </ul>
-    </nav>
-    <nav class="main">
-        <ul>
-            
-            <li id="share-nav" class="share-menu" style="display:none;">
-                <a class="fa-share-alt" href="#share-menu">Share</a>
-            </li>
-            
-            <li class="search">
-                <a class="fa-search" href="#search">Search</a>
-                <form id="search" method="get" action="//google.com/search">
-                    <input type="text" name="q" placeholder="Search" />
-                    <input type="hidden" name="as_sitesearch" value="https://exp-ai.github.io">
-                </form>
-            </li>
-            <li class="menu">
-                <a class="fa-bars" href="#menu">Menu</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-
-<section id="menu">
-
-    
-        <section>
-            <form class="search" method="get" action="//google.com/search">
-                <input type="text" name="q" placeholder="Search" />
-                <input type="hidden" name="as_sitesearch" value="https://exp-ai.github.io">
-            </form>
-        </section>
-
-    
-        <section>
-            <ul class="links">
-                
-                    <li>
-                        <a href="https://exp-ai.github.io/">
-                            <h3>
-                                <i class="fa fa-home">&nbsp;</i>Home
-                            </h3>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://exp-ai.github.io/apps/">
-                            <h3>
-                                <i class="fa fa-mobile">&nbsp;</i>Apps
-                            </h3>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://exp-ai.github.io/blog/">
-                            <h3>
-                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
-                            </h3>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://exp-ai.github.io/about/">
-                            <h3>
-                                <i class="fa fa-id-card-o">&nbsp;</i>About
-                            </h3>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://exp-ai.github.io/contact/">
-                            <h3>
-                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
-                            </h3>
-                        </a>
-                    </li>
-                
-            </ul>
-        </section>
-
-    
-        <section class="recent-posts">
-            <div class="mini-posts">
-                <header>
-                    <h3>Recent Posts</h3>
-                </header>
-                
-
-                
-                    
-                
-
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://exp-ai.github.io/blog/creating-a-new-theme/">Creating a New Theme</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2014-09-28'>
-                                    September 28, 2014</time>
-                            </header>
-                            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/creating-a-new-theme/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/09/pic03.jpg" alt="">
-        </a>
-    
-
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://exp-ai.github.io/blog/goisforlovers/">(Hu)go Template Primer</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2014-04-02'>
-                                    April 2, 2014</time>
-                            </header>
-                            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/goisforlovers/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/04/pic02.jpg" alt="">
-        </a>
-    
-
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://exp-ai.github.io/blog/hugoisforlovers/">Getting Started with Hugo</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2014-04-02'>
-                                    April 2, 2014</time>
-                            </header>
-                            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/hugoisforlovers/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/04/pic01.jpg" alt="">
-        </a>
-    
-
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://exp-ai.github.io/blog/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2014-03-10'>
-                                    March 10, 2014</time>
-                            </header>
-                            
-
-                        </article>
-                
-
-                
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.example.com">Home</a></li>
+              
+                <li><a href="/work/">Work</a></li>
+              
+                <li><a href="/blog/">Blog</a></li>
+              
+                <li><a href="/service/">Service</a></li>
+              
+                <li><a href="/contact/">Contact</a></li>
+              
+              </ul>
             </div>
-        </section>
-
-    
-        
-</section>
-
-    <section id="share-menu">
-    <section id="social-share-nav">
-        <ul class="links">
-            <header>
-                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
-            </header>
-            
-
-
-
-<li>
-  <a href="//twitter.com/share?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;text=Creating%20a%20New%20Theme&amp;via=" target="_blank" class="share-btn twitter">
-    <i class="fa fa-twitter"></i>
-    <p>Twitter</p>
-    </a>
-</li>
-
-
-
-
-<li>
-  <a href="//plus.google.com/share?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn google-plus">
-    <i class="fa fa-google-plus"></i>
-    <p>Google+</p>
-  </a>
-</li>
-
-
-
-
-
-<li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn facebook">
-    <i class="fa fa-facebook"></i>
-    <p>Facebook</p>
-    </a>
-</li>
-
-
-
-
-<li>
-  <a href="//reddit.com/submit?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;title=Creating%20a%20New%20Theme" target="_blank" class="share-btn reddit">
-    <i class="fa fa-reddit-alien"></i>
-    <p>Reddit</p>
-  </a>
-</li>
-
-
-
-
-<li>
-  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;title=Creating%20a%20New%20Theme" target="_blank" class="share-btn linkedin">
-      <i class="fa fa-linkedin"></i>
-      <p>LinkedIn</p>
-    </a>
-</li>
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="mailto:?subject=Check out this post by Theme%20author&amp;body=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn email">
-    <i class="fa fa-envelope"></i>
-    <p>Email</p>
-  </a>
-</li>
-
-
-        </ul>
-    </section>
-</section>
-
-    
-    <div id="main">
-        
-        
-        <article class="post">
-  <header>
-    <div class="title">
-        
-            <h1><a href="https://exp-ai.github.io/blog/creating-a-new-theme/">Creating a New Theme</a></h1>
-            
-        
-        
-            <p>Learn how to create a theme on Hugo</p>
-        
+          </div>
+        </nav>
+      </div>
     </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2014-09-28'>
-            September 28, 2014</time>
-        <span class="author">Theme author</span>
-        
-            <p>35 minute read</p>
-        
-        
-    </div>
+  </div>
 </header>
 
 
-  
-    <section id="social-share">
-      <ul class="icons">
-        
-
-
-
-<li>
-  <a href="//twitter.com/share?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;text=Creating%20a%20New%20Theme&amp;via=" target="_blank" class="share-btn twitter">
-    <i class="fa fa-twitter"></i>
-    <p>Twitter</p>
-    </a>
-</li>
-
-
-
-
-<li>
-  <a href="//plus.google.com/share?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn google-plus">
-    <i class="fa fa-google-plus"></i>
-    <p>Google+</p>
-  </a>
-</li>
-
-
-
-
-
-<li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn facebook">
-    <i class="fa fa-facebook"></i>
-    <p>Facebook</p>
-    </a>
-</li>
-
-
-
-
-<li>
-  <a href="//reddit.com/submit?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;title=Creating%20a%20New%20Theme" target="_blank" class="share-btn reddit">
-    <i class="fa fa-reddit-alien"></i>
-    <p>Reddit</p>
-  </a>
-</li>
-
-
-
-
-<li>
-  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f&amp;title=Creating%20a%20New%20Theme" target="_blank" class="share-btn linkedin">
-      <i class="fa fa-linkedin"></i>
-      <p>LinkedIn</p>
-    </a>
-</li>
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="mailto:?subject=Check out this post by Theme%20author&amp;body=https%3a%2f%2fexp-ai.github.io%2fblog%2fcreating-a-new-theme%2f" target="_blank" class="share-btn email">
-    <i class="fa fa-envelope"></i>
-    <p>Email</p>
-  </a>
-</li>
-
-
-      </ul>
-    </section>
-  
-
-  
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/creating-a-new-theme/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/09/pic03.jpg" alt="">
-        </a>
-    
-
-
-  <div id="content">
-    
+	<div class="post">
+	  
+	  <section id="intro" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+	            <h1>Creating a new theme</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">6 June 2015</span></p>
+	            </div>
+	            <hr />
+	            <p>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -750,10 +235,8 @@ $
 
 <pre><code>$ hugo --verbose
 INFO: 2014/09/29 Using config file: config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html
-                                            _default/single.html]
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
 0 draft content
 0 future content
@@ -796,10 +279,8 @@ $
 
 <pre><code>$ hugo server --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html
-                                            _default/single.html]
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
 0 draft content
 0 future content
@@ -822,8 +303,7 @@ sitemap.xml
 
 <p>Let’s go back and look at those warnings again.</p>
 
-<pre><code>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html
-                                            _default/single.html]
+<pre><code>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
 </code></pre>
 
@@ -862,15 +342,11 @@ drwxr-xr-x  3 quoha  staff  102 Sep 29 17:31 themes
 $ find themes -type f | xargs ls -l
 -rw-r--r--  1 quoha  staff  1081 Sep 29 17:31 themes/zafta/LICENSE.md
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/archetypes/default.md
--rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/_default/
-                                                list.html
--rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/_default/
-                                                single.html
+-rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
+-rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/_default/single.html
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/index.html
--rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/
-                                                footer.html
--rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/
-                                                header.html
+-rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
+-rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
 -rw-r--r--  1 quoha  staff    93 Sep 29 17:31 themes/zafta/theme.toml
 $
 </code></pre>
@@ -895,16 +371,11 @@ tags = [&quot;tags&quot;, &quot;categories&quot;]
 <p>Note that the the skeleton&rsquo;s template files are empty. Don&rsquo;t worry, we&rsquo;ll be changing that shortly.</p>
 
 <pre><code>$ find themes/zafta -name '*.html' | xargs ls -l
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/
-                                            list.html
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/
-                                            single.html
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/
-                                            index.html
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/partials/
-                                            footer.html
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/partials/
-                                            header.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/single.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/index.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
 $
 </code></pre>
 
@@ -931,10 +402,8 @@ $
 
 <pre><code>$ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -972,8 +441,7 @@ $
 
 <p>Hugo supports many different types of templates. The home page is special because it gets its own type of template and its own template file. The file, layouts/index.html, is used to generate the HTML for the home page. The Hugo documentation says that this is the only required template, but that depends. Hugo&rsquo;s warning message shows that it looks for three different templates:</p>
 
-<pre><code>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html
-                                            _default/single.html]
+<pre><code>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 </code></pre>
 
 <p>If it can&rsquo;t find any of these, it completely skips creating the home page. We noticed that when we built the site without having a theme installed.</p>
@@ -1053,10 +521,8 @@ $ hugo server --watch --verbose
 <pre><code>$ rm -rf public
 $ hugo server --watch --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1068,8 +534,7 @@ Watching for changes in /Users/quoha/Sites/zafta/content
 Serving pages from /Users/quoha/Sites/zafta/public
 Web Server is available at http://localhost:1313
 Press Ctrl+C to stop
-INFO: 2014/09/29 File System Event: [&quot;/Users/quoha/Sites/zafta/themes/zafta/
-                                        layouts/index.html&quot;: MODIFY|ATTRIB]
+INFO: 2014/09/29 File System Event: [&quot;/Users/quoha/Sites/zafta/themes/zafta/layouts/index.html&quot;: MODIFY|ATTRIB]
 Change detected, rebuilding site
 
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
@@ -1113,10 +578,8 @@ $
 
 <pre><code>$ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1167,8 +630,7 @@ $ cat public/index.html
 <pre><code>$ hugo --verbose new post/first.md
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 attempting to create  post/first.md of post
-INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/
-                            default.md
+INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
 ERROR: 2014/09/29 Unable to Cast &lt;nil&gt; to map[string]interface{}
 
 $
@@ -1193,16 +655,14 @@ $ find themes/zafta/archetypes -type f | xargs ls -l
 $ hugo --verbose new post/first.md
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 attempting to create  post/first.md of post
-INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/
-                            post.md
+INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/post.md
 INFO: 2014/09/29 creating /Users/quoha/Sites/zafta/content/post/first.md
 /Users/quoha/Sites/zafta/content/post/first.md created
 
 $ hugo --verbose new post/second.md
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 attempting to create  post/second.md of post
-INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/
-                            post.md
+INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/post.md
 INFO: 2014/09/29 creating /Users/quoha/Sites/zafta/content/post/second.md
 /Users/quoha/Sites/zafta/content/post/second.md created
 
@@ -1241,12 +701,9 @@ $
 <pre><code>$ rm -rf public
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 found taxonomies: map[string]string{&quot;category&quot;:&quot;categories&quot;,
-                                                    &quot;tag&quot;:&quot;tags&quot;}
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 found taxonomies: map[string]string{&quot;category&quot;:&quot;categories&quot;, &quot;tag&quot;:&quot;tags&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1316,12 +773,9 @@ $
 <pre><code>$ rm -rf public
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;,
-                                                    &quot;category&quot;:&quot;categories&quot;}
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1361,8 +815,7 @@ $
 <p>Now that we know the search rule, let&rsquo;s see what we actually have available:</p>
 
 <pre><code>$ find themes/zafta -name single.html | xargs ls -l
--rw-r--r--  1 quoha  staff  132 Sep 29 17:31 themes/zafta/layouts/_default/
-                                                single.html
+-rw-r--r--  1 quoha  staff  132 Sep 29 17:31 themes/zafta/layouts/_default/single.html
 </code></pre>
 
 <p>We could create a new template, post/single.html, or change the default. Since we don&rsquo;t know of any other content types, let&rsquo;s start with updating the default.</p>
@@ -1394,12 +847,9 @@ $
 <pre><code>$ rm -rf public
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;,
-                                                    &quot;category&quot;:&quot;categories&quot;}
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1464,12 +914,9 @@ $
 <pre><code>$ rm -rf public
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to
-    /Users/quoha/Sites/zafta/public/
-INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;,
-                                                    &quot;category&quot;:&quot;categories&quot;}
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
 0 draft content
 0 future content
@@ -1506,8 +953,7 @@ $
 <p>We need to decide which template to update. This will be a listing, so it should be a list template. Let&rsquo;s take a quick look and see which list templates are available.</p>
 
 <pre><code>$ find themes/zafta -name list.html | xargs ls -l
--rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/
-                                            list.html
+-rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
 </code></pre>
 
 <p>As with the single post, we have to decide to update _default/list.html or create post/list.html. We still don&rsquo;t have multiple content types, so let&rsquo;s stay consistent and update the default list template.</p>
@@ -1537,11 +983,9 @@ i'm speechless
 <pre><code>$ find public -name '*.html' | xargs ls -l
 -rw-rw-r--  1 mdhender  staff   334 Sep 27 15:08 public/about-time/index.html
 -rw-rw-r--  1 mdhender  staff   527 Sep 27 15:08 public/index.html
--rw-rw-r--  1 mdhender  staff   358 Sep 27 15:08 public/post/first-post/
-                                                    index.html
+-rw-rw-r--  1 mdhender  staff   358 Sep 27 15:08 public/post/first-post/index.html
 -rw-rw-r--  1 mdhender  staff     0 Sep 27 15:08 public/post/index.html
--rw-rw-r--  1 mdhender  staff   342 Sep 27 15:08 public/post/second-post/
-                                                    index.html
+-rw-rw-r--  1 mdhender  staff   342 Sep 27 15:08 public/post/second-post/index.html
 </code></pre>
 
 <p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/&rsquo;. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
@@ -1552,14 +996,13 @@ i'm speechless
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-    &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/theme/&quot;&gt;
-        creating a new theme&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/theme/&quot;&gt;creating a new theme&lt;/a&gt;&lt;/h1&gt;
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/about-time/&quot;&gt;about&lt;/a&gt;&lt;/h1&gt;
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/second-post/&quot;&gt;second&lt;/a&gt;&lt;/h1&gt;
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/first-post/&quot;&gt;first&lt;/a&gt;&lt;/h1&gt;
 &lt;script&gt;document.write('&lt;script src=&quot;http://'
         + (location.host || 'localhost').split(':')[0]
-		+ ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
+    + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
         + 'script&gt;')&lt;/script&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -1595,19 +1038,17 @@ i'm speechless
 <pre><code>$ find public -name '*.html' | xargs ls -l
 -rw-rw-r--  1 mdhender  staff    334 Sep 27 15:33 public/about-time/index.html
 -rw-rw-r--  1 mdhender  staff    645 Sep 27 15:33 public/index.html
--rw-rw-r--  1 mdhender  staff    358 Sep 27 15:33 public/post/first-post/
-                                                    index.html
+-rw-rw-r--  1 mdhender  staff    358 Sep 27 15:33 public/post/first-post/index.html
 -rw-rw-r--  1 mdhender  staff      0 Sep 27 15:33 public/post/index.html
--rw-rw-r--  1 mdhender  staff    342 Sep 27 15:33 public/post/second-post/
-                                                    index.html
+-rw-rw-r--  1 mdhender  staff    342 Sep 27 15:33 public/post/second-post/index.html
 </code></pre>
 
 <p>Knowing that hugo is using the slug to generate the file name, the simplest solution is to change the slug. Let&rsquo;s do it the hard way and change the permalink in the configuration file.</p>
 
 <pre><code>$ vi config.toml
 [permalinks]
-	page = &quot;/:title/&quot;
-	about = &quot;/:filename/&quot;
+  page = &quot;/:title/&quot;
+  about = &quot;/:filename/&quot;
 </code></pre>
 
 <p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p>
@@ -1626,7 +1067,7 @@ i'm speechless
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-	&lt;title&gt;{{ .Title }}&lt;/title&gt;
+  &lt;title&gt;{{ .Title }}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
 :wq
@@ -1666,8 +1107,7 @@ $ vi themes/zafta/layouts/partials/footer.html
   &lt;h1&gt;pages&lt;/h1&gt;
   {{ range .Data.Pages }}
     {{ if or (eq .Type &quot;page&quot;) (eq .Type &quot;about&quot;) }}
-      &lt;h2&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Type }} -
-        {{ .Title }} - {{ .RelPermalink }}&lt;/a&gt;&lt;/h2&gt;
+      &lt;h2&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Type }} - {{ .Title }} - {{ .RelPermalink }}&lt;/a&gt;&lt;/h2&gt;
     {{ end }}
   {{ end }}
 
@@ -1755,580 +1195,61 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a href="https://www.example.com/blog">Back to blog</a>
+	</p>
 
-  </div>
+	
+		
 
-  <footer>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="https://exp-ai.github.io/categories/hugo">Hugo</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-            
-            
-                <i class="fa fa-tags"></i>
-                
-                
-                <li><a class="article-category-link" href="https://exp-ai.github.io/tags/tutorial">tutorial</a></li>
-                
-            
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-
-</article>
-
-    <article class="post">
-        <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "exp-ai" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </article>
-
-
-<ul class="actions pagination">
-    
-        <li><a href="https://exp-ai.github.io/blog/goisforlovers/"
-                class="button big previous">(Hu)go Template Primer</a></li>
-    
-
-    
-</ul>
-
-
-    </div>
-    
-<section id="sidebar">
-
-  
-  <section id="intro">
-    
-    
-      
-        <a href='https://exp-ai.github.io/'><img src="https://exp-ai.github.io/img/logos/logo.png" width="175" alt="Exp-AI" /></a>
-      
-    
-    
-      <header>
-        <h2>Exp-AI</h2>
-        <p>AI-leveraged solutions for the modern world.</p>
-      </header>
-    
-    
-      <ul class="icons">
-        
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
           
-    <li><a href="https://exp-ai.github.io/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss icons"></a></li>
-
-
-        
-        
-  <li><a href="//github.com/exp-ai/" target="_blank" title="GitHub" class="fa fa-github icons"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <li><a href="mailto:info@exp-ai.com" title="Email" class="fa fa-envelope icons"></a></li>
-
-
-      </ul>
-    
-  </section>
-
-  
-  <section class="recent-posts">
-    <div class="mini-posts">
-      <header>
-        <h3>Recent Posts</h3>
-      </header>
-      <div class="posts-container">
-        
-
-        
-          
-        
-
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://exp-ai.github.io/blog/creating-a-new-theme/">Creating a New Theme</a>
-              </h3>
-              
-              <time class="published" datetime='2014-09-28'>
-                September 28, 2014
-              </time>
-            </header>
-            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/creating-a-new-theme/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/09/pic03.jpg" alt="">
-        </a>
-    
-
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://exp-ai.github.io/blog/goisforlovers/">(Hu)go Template Primer</a>
-              </h3>
-              
-              <time class="published" datetime='2014-04-02'>
-                April 2, 2014
-              </time>
-            </header>
-            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/goisforlovers/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/04/pic02.jpg" alt="">
-        </a>
-    
-
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://exp-ai.github.io/blog/hugoisforlovers/">Getting Started with Hugo</a>
-              </h3>
-              
-              <time class="published" datetime='2014-04-02'>
-                April 2, 2014
-              </time>
-            </header>
-            
-    
-
-    
-        
-        
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="https://exp-ai.github.io/blog/hugoisforlovers/" class="image featured">
-            <img src="https://exp-ai.github.io/img/2014/04/pic01.jpg" alt="">
-        </a>
-    
-
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://exp-ai.github.io/blog/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
-              </h3>
-              
-              <time class="published" datetime='2014-03-10'>
-                March 10, 2014
-              </time>
-            </header>
-            
-
-          </article>
-        
+        </div>
       </div>
-
-      
     </div>
-  </section>
-
-  
-  
-  
-  
-  
-    <section id="categories">
-      <header>
-        <h3>
-          <a href="https://exp-ai.github.io/categories/">Categories</a>
-        </h3>
-      </header>
-        
-          
-        
-
-        
-        <p>
-          <article>
-            <header>
-              
-                Uncategorized
-                <span style="float:right;">3</span>
-              
-            </header>
-          </article>
-        </p>
-        
-        <p>
-          <article>
-            <header>
-              
-                <a href="https://exp-ai.github.io/categories/hugo/">Hugo</a>
-                <span style="float:right;">3</span>
-              
-            </header>
-          </article>
-        </p>
-        
-        <p>
-          <article>
-            <header>
-              
-                <a href="https://exp-ai.github.io/categories/go/">Go</a>
-                <span style="float:right;">1</span>
-              
-            </header>
-          </article>
-        </p>
-        
-        <p>
-          <article>
-            <header>
-              
-                <a href="https://exp-ai.github.io/categories/healthcare/">Healthcare</a>
-                <span style="float:right;">1</span>
-              
-            </header>
-          </article>
-        </p>
-        
-        <p>
-          <article>
-            <header>
-              
-                <a href="https://exp-ai.github.io/categories/jekyll/">Jekyll</a>
-                <span style="float:right;">1</span>
-              
-            </header>
-          </article>
-        </p>
-        
-    </section>
-  
-  
-
-  
-  
-    <section id="mini-bio">
-      <h3>About</h3>
-      <p>Exp-AI borns from a group of former scientists and serial entrepeneurs with a common goal: bring companies closer to the new cognitive era with tailored solutions, specifically designed to get the best possible outcome out of every process and endeavor.</p>
-      <a href="https://exp-ai.github.io/about/" class="button">Learn More</a>
-    </section>
-  
-
-  
-  <section id="footer">
-    
-      <ul class="icons">
-        
-          
-    <li><a href="https://exp-ai.github.io/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss icons"></a></li>
-
-
-        
-        
-  <li><a href="//github.com/exp-ai/" target="_blank" title="GitHub" class="fa fa-github icons"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <li><a href="mailto:info@exp-ai.com" title="Email" class="fa fa-envelope icons"></a></li>
-
-
-      </ul>
-    
-    <p class="copyright">
-      
-        (c) 2018 Exp-ai.
-      
-    </p>
-  </section>
+  </div>
 </section>
 
+	
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="#">About us</a></li>
+            
+            <li><a href="#">Contact us</a></li>
+            
+            <li><a href="#">How it works</a></li>
+            
+            <li><a href="#">Blog</a></li>
+            
+            <li><a href="#">Terms</a></li>
+            
+          </ul>
+        </div>
+        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
+      </div>
     </div>
-    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
-    
+  </div>
+</footer>
 
-    
-      
-    
-
-    
-      
-      
-      
-        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
-        
-        
-        
-        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
-        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
-        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
-        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-      
-    
-    
-    
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-      <script src="https://exp-ai.github.io/js/util.js"></script>
-      <script src="https://exp-ai.github.io/js/main.js"></script>
-      <script src="https://exp-ai.github.io/js/backToTop.js"></script>
-    
-
-    
-      
-        
-      
-    
-
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-      <script src="//yihui.name/js/math-code.js"></script>
-<script async
-src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-
-  </body>
+</body>
 </html>
-
