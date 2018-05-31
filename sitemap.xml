@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://www.example.com/blog/go-is-for-lovers/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.example.com/blog/hugo-is-for-lovers/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url>
@@ -49,12 +44,6 @@
   </url>
   
   <url>
-    <loc>https://www.example.com/tags/go/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.example.com/tags/golang/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
@@ -79,13 +68,13 @@
   </url>
   
   <url>
-    <loc>https://www.example.com/tags/programming/</loc>
+    <loc>https://www.example.com/categories/programming/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.example.com/categories/programming/</loc>
+    <loc>https://www.example.com/tags/programming/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -108,7 +97,7 @@
   
   <url>
     <loc>https://www.example.com/tags/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
   
